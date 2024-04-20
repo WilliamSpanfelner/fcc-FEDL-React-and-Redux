@@ -9,8 +9,8 @@ class DisplayMessages extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
     // Add handleChange() and submitMessage() methods here
-    handleChange() {
-        const newMessage = document.querySelector("input").value;
+    handleChange(e) {
+        const newMessage = e.target.value;
         this.setState (() => {
             return {
                 input: newMessage
