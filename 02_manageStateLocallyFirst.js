@@ -37,7 +37,7 @@ class DisplayMessages extends React.Component {
             <h2>Type in a new Message:</h2>
             { /* Render an input, button, and ul below this line*/ }
             <input onChange={this.handleChange} value={this.state.input} />
-            <button onClick={this.submitMessage} />
+            <button onClick={this.submitMessage}>Send</button>
             <ul>{allMessages}</ul>
             { /* Change code above this line */ }
         </div>
