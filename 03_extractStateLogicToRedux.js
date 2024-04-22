@@ -14,3 +14,5 @@ const addMessage = (message) => {
 const messageReducer = (state=[], action) => {
     return action.type == ADD ? [...state, action.message] : state;
 }
+
+const store = Redux.createStore(messageReducer);
