@@ -94,6 +94,10 @@ class AppWrapper extends React.Component {
     }
     render() {
         // Complete the return statement:
-        return (null);
+        return (
+            <Provider store={store}>
+                <Container />
+            </Provider>
+        );
     }
 };
