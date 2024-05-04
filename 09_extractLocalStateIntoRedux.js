@@ -24,8 +24,7 @@ class Presentational extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: '',
-            messages: []
+            input: ''
         }
         this.handleChange = this.handleChange.bind(this);
         this.submitMessage = this.submitMessage.bind(this);
