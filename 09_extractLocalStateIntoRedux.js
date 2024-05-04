@@ -53,7 +53,7 @@ class Presentational extends React.Component {
                     value={this.state.input}
                     onChange={this.handleChange} /><br />
                 <button onClick={this.submitMessage}>Submit</button>
-                <ul>{this.state.messages.map( (message, idx) => {
+                <ul>{this.props.messages.map( (message, idx) => {
                     return (
                         <li key={idx}>{message}</li>
                     )
